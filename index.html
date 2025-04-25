@@ -1,24 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Startup</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Startup Store</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Welcome to My Startup</h1>
-  <p>This is our awesome product!</p>
-  <a href="#features"><button>Learn More</button></a>
-  <section id="features">
-    <h2>Features</h2>
-    <ul>
-      <li>🚀 Fast and reliable</li>
-      <li>🔒 Secure by design</li>
-      <li>📱 Mobile-friendly</li>
-    </ul>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">MyStore</div>
+    <input type="text" class="search-bar" placeholder="Search products...">
+    <div class="cart">🛒 Cart</div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to MyStore!</h1>
+    <p>Find the best products here!</p>
   </section>
-  <footer>
-    <p>Contact us: <a href="mailto:info@startup.com">info@startup.com</a></p>
-  </footer>   
+
+  <!-- Products Section -->
+  <section class="products">
+    <div class="product-card">
+      <img src="https://via.placeholder.com/150" alt="Product 1">
+      <h2>Product 1</h2>
+      <p>$19.99</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/150" alt="Product 2">
+      <h2>Product 2</h2>
+      <p>$29.99</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/150" alt="Product 3">
+      <h2>Product 3</h2>
+      <p>$39.99</p>
+      <button>Add to Cart</button>
+    </div>
+    <!-- Add more product-cards here -->
+  </section>
+
 </body>
 </html>
+
