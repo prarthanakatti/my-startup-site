@@ -37,3 +37,26 @@ function removeItem(index) {
 
 // Show cart on page load
 window.onload = displayCart;
+document.addEventListener("DOMContentLoaded", function () {
+  const addToCartButtons = document.querySelectorAll(".add-to-cart");
+
+  addToCartButtons.forEach(button => {
+      button.addEventListener("click", function () {
+          const product = {
+              name: this.getAttribute("data-name"),
+              price: this.getAttribute("data-price")
+          };
+
+          // Get current cart from localStorage
+          let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+          // Add new product
+          cart.push(product);
+
+          // Save back to localStorage
+          localStorage.setItem("cart", JSON.stringify(cart));
+
+          alert(product.name + " added to cart!");
+      });
+  });
+});
